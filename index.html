@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>COFFEE BLEND</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div
+        class="container ml-auto"
+        style="display: flex; flex-direction: row; gap: 500px"
+      >
+        <a class="navbar-brand" style="color: white" href="#">COFFEE</a>
+        <div class="collapse navbar-collapse ml-auto" id="navbarTogglerDemo02">
+          <ul
+            class="navbar-nav ml-auto mb-2 mb-lg-0"
+            style="display: flex; gap: 20px; align-items: center"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                style="color: #c49b63"
+                aria-current="page"
+                href="#"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: whitesmoke" href="#">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: whitesmoke" href="#"
+                >SERVICES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: whitesmoke" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: whitesmoke" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                style="color: whitesmoke"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                SHOP
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item" style="align-items: center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="whitesmoke"
+                class="bi bi-cart-check-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner" align="center">
+        <div class="carousel-item active">
+          <img src="./img/img15.jpg" class="d-block w-100" alt="..." />
+          <div
+            class="carousel-caption d-none d-md-block"
+            style="padding-bottom: 150px"
+          >
+            <h1 style="margin-bottom: 30px">
+              THE BEST COFFEE TESTING<br />
+              EXPERIENCE
+            </h1>
+            <p style="margin-bottom: 30px; color: whitesmoke">
+              A small river named Duden flows by their place and supplies it
+              with the necessary<br />
+              regelialia
+            </p>
+            <button
+              type="button"
+              style="background-color: #c49b63"
+              class="btn ord"
+            >
+              Order Now
+            </button>
+            <button type="button" class="btn btn-outline menu">
+              View Menu
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/img16.jpg" class="d-block w-100" alt="..." />
+          <div
+            class="carousel-caption d-none d-md-block"
+            style="padding-bottom: 150px"
+          >
+            <h1 style="margin-bottom: 30px">
+              THE BEST COFFEE TESTING<br />
+              EXPERIENCE
+            </h1>
+            <p style="margin-bottom: 30px; color: whitesmoke">
+              A small river named Duden flows by their place and supplies it
+              with the necessary<br />
+              regelialia
+            </p>
+            <button
+              type="button"
+              style="background-color: #c49b63"
+              class="btn ord"
+            >
+              Order Now
+            </button>
+            <button type="button" class="btn btn-outline menu">
+              View Menu
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/img17.jpg" class="d-block w-100" alt="..." />
+          <div
+            class="carousel-caption d-none d-md-block"
+            style="padding-bottom: 150px"
+          >
+            <h1 style="margin-bottom: 30px">
+              THE BEST COFFEE TESTING<br />
+              EXPERIENCE
+            </h1>
+            <p style="margin-bottom: 30px; color: whitesmoke">
+              A small river named Duden flows by their place and supplies it
+              with the necessary<br />
+              regelialia
+            </p>
+            <button
+              type="button"
+              style="background-color: #c49b63"
+              class="btn ord"
+            >
+              Order Now
+            </button>
+            <button type="button" class="btn btn-outline menu">
+              View Menu
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="det" style="display: flex">
+      <div
+        class="container sec-ses"
+        style="
+          flex: 0.6;
+          background-color: black;
+          display: flex;
+          justify-content: space-evenly;
+        "
+      >
+        <div class="details">
+          <h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-right: 15px"
+              width="16"
+              height="16"
+              fill="#c49b63"
+              class="bi bi-telephone-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+              />
+            </svg>
+            000(123) 456 7890
+          </h4>
+          <p>A small river named Duden flows by their place and supplies</p>
+        </div>
+        <div class="details">
+          <h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-right: 15px"
+              width="16"
+              height="16"
+              fill="#c49b63"
+              class="bi bi-geo-alt-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+              />
+            </svg>
+            198 Westt 21th Street
+          </h4>
+          <p>203 Fake St.Mountain View, San Francisco,California,USA</p>
+        </div>
+        <div class="details">
+          <h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-right: 15px"
+              width="16"
+              height="16"
+              fill="#c49b63"
+              class="bi bi-clock-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+              />
+            </svg>
+            Open Monday-Friday
+          </h4>
+          <p>8:00am-9:00pm</p>
+        </div>
+      </div>
+      <div class="book" style="flex: 0.4">
+        <h5>Book a table</h5>
+        <div class="nam">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Second Name" />
+        </div>
+        <div class="nam">
+          <input type="text" placeholder="Date" />
+          <input type="text" placeholder="Time" />
+        </div>
+        <div class="nam">
+          <input type="text" placeholder="Message" />
+          <button type="button" class="btn ord">Appointment</button>
+        </div>
+      </div>
+    </div>
+    <div class="story" style="display: flex; gap: 0">
+      <div class="section-1">
+        <img src="./img/img5.jpg" style="width: 100%" alt="" />
+      </div>
+      <div class="section-1" style="z-index: 1">
+        <img src="./img/img6.jpg" style="width: 100%" alt="" />
+        <div class="discover">
+          <h1>OUR STORY</h1>
+          <p style="color: #948d8d">
+            On her way she met a copy.The copy warned the Little Blind Text,that
+            where it came form it would have been rewritten a thousand times and
+            everything that was left from its origin would be the word "and" and
+            the Little Blind Text should turn around and return to its own,safe
+            country.But nothing the copy said could convince her and so it
+            didn't take long until a few insidious Copy Writer ambshed her,made
+            her drunk with Longe and Parole and dragged her into their
+            agency,where they abused her for their.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="esy"
+      style="
+        background-color: #c49b63;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        align-items: center;
+        height: 55vh;
+        flex-direction: row;
+        justify-content: space-evenly;
+      "
+    >
+      <div class="container con">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          fill="#070708"
+          class="bi bi-menu-button-wide"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-13z"
+          />
+          <path
+            d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+        <h5>EASY TO ORDER</h5>
+        <p>
+          Even the all-powered Pointing has no control<br />about the blind
+          texts it is an almost <br />
+          unorthographic.
+        </p>
+      </div>
+      <div class="container con">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          fill="#070708"
+          class="bi bi-truck"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+          />
+        </svg>
+        <h5>FASTEST DELIVERY</h5>
+        <p>
+          Even the all-powered Pointing has no control<br />about the blind
+          texts it is an almost <br />
+          unorthographic.
+        </p>
+      </div>
+      <div class="container con">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          fill="#070708"
+          class="bi bi-menu-button-wide"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-13z"
+          />
+          <path
+            d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+        <h5>QUALITY COFFEE</h5>
+        <p>
+          Even the all-powered Pointing has no control<br />about the blind
+          texts it is an almost <br />
+          unorthographic.
+        </p>
+      </div>
+    </div>
+
+    <div class="disco">
+      <div
+        class="container dis"
+        style="
+          padding: 40px 60px 40px 40px;
+          color: white;
+          background-color: #070708;
+          text-align: right;
+          float: right;
+        "
+      >
+        <h1>OUR MENU</h1>
+        <p style="color: #686868">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis,
+          excepturi! Ipsam minus sapiente odio rerum, exercitationem vel maxime.
+          Deserunt explicabo officiis maxime suscipit provident nemo tempore
+          dolore ex voluptatum sapiente.
+        </p>
+        <button type="button" class="btn btn-outline view">
+          View Order Menu
+        </button>
+      </div>
+      <div
+        class="container"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          padding: 40px;
+          background-color: #070708;
+        "
+      >
+        <img
+          src="./img/img7.jpg"
+          style="width: 250px; height: auto"
+          alt="image1"
+        />
+        <img
+          src="./img/img8.jpg"
+          style="width: 250px; height: auto"
+          alt="image1"
+        />
+        <img
+          src="./img/img9.jpg"
+          style="width: 250px; height: auto"
+          alt="image1"
+        />
+        <img
+          src="./img/img10.jpg"
+          style="width: 250px; height: auto"
+          alt="image1"
+        />
+      </div>
+    </div>
+    <div class="seller">
+      <div style="display: flex; flex-direction: column; gap: 30px">
+        <h1>BEST COFFEE SELLERS</h1>
+        <p style="color: #686868">
+          Far far away,behind the word mountains,far from the countries Vokalia
+          and<br />Consonantia,there live the blind texts.
+        </p>
+      </div>
+      <div class="container price-main">
+        <div class="price">
+          <img
+            src="./img/img7.jpg"
+            style="width: 250px; height: auto; margin-bottom: 30px"
+            alt="image1"
+          />
+          <h4>COFFEE CAPUCCINO</h4>
+          <p>A small river named Dudan flows by their place and supplies.</p>
+          <h3>$5.90</h3>
+          <button type="button" class="btn btn-outline views">
+            Add to Cart
+          </button>
+        </div>
+        <div class="price">
+          <img
+            src="./img/img8.jpg"
+            style="width: 250px; height: auto; margin-bottom: 30px"
+            alt="image1"
+          />
+          <h4>COFFEE CAPUCCINO</h4>
+          <p>A small river named Dudan flows by their place and supplies.</p>
+          <h3>$5.90</h3>
+          <button type="button" class="btn btn-outline views">
+            Add to Cart
+          </button>
+        </div>
+        <div class="price">
+          <img
+            src="./img/img9.jpg"
+            style="width: 250px; height: auto; margin-bottom: 30px"
+            alt="image1"
+          />
+          <h4>COFFEE CAPUCCINO</h4>
+          <p>A small river named Dudan flows by their place and supplies.</p>
+          <h3>$5.90</h3>
+          <button type="button" class="btn btn-outline views">
+            Add to Cart
+          </button>
+        </div>
+        <div class="price">
+          <img
+            src="./img/img10.jpg"
+            style="width: 250px; height: auto; margin-bottom: 30px"
+            alt="image1"
+          />
+          <h4>COFFEE CAPUCCINO</h4>
+          <p>A small river named Dudan flows by their place and supplies.</p>
+          <h3>$5.90</h3>
+          <button type="button" class="btn btn-outline views">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; gap: 0">
+      <img src="./img/img7.jpg" style="width: 25%; height: auto" alt="image1" />
+      <img src="./img/img8.jpg" style="width: 25%; height: auto" alt="image1" />
+      <img src="./img/img9.jpg" style="width: 25%; height: auto" alt="image1" />
+      <img
+        src="./img/img10.jpg"
+        style="width: 25%; height: auto"
+        alt="image1"
+      />
+    </div>
+    <div class="seller" style="background-color: #070708">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          text-align: center;
+        "
+      >
+        <h1>OUR PRODUCTS</h1>
+        <p style="color: #686868">
+          Far far away,behind the word mountains,far from the countries Vokalia
+          and<br />Consonantia,there live the blind texts.
+        </p>
+        <div class="pros">
+          <div class="main-dish">Main Dish</div>
+          <div class="drinks">Drinks</div>
+          <div class="desserts">Desserts</div>
+        </div>
+      </div>
+      <div class="container price-main">
+        <div class="price">
+          <img
+            src="./img/img11.jpg"
+            style="width: 350px; height: auto; margin-bottom: 30px"
+            alt="image1"
+          />
+          <h4>COFFEE CAPUCCINO</h4>
+          <p>A small river named Dudan flows by their place and supplies.</p>
+          <h3>$2.90</h3>
+          <button type="button" class="btn btn-outline views">
+            Add to Cart
+          </button>
+        </div>
+        <div class="price">
+          <img
+            src="./img/img12.jpg"
+            style="width: 350px; height: auto; margin-bottom: 30px"
+            alt="image1"
+          />
+          <h4>COFFEE CAPUCCINO</h4>
+          <p>A small river named Dudan flows by their place and supplies.</p>
+          <h3>$2.90</h3>
+          <button type="button" class="btn btn-outline views">
+            Add to Cart
+          </button>
+        </div>
+        <div class="price">
+          <img
+            src="./img/img13.jpg"
+            style="width: 350px; height: auto; margin-bottom: 30px"
+            alt="image1"
+          />
+          <h4>COFFEE CAPUCCINO</h4>
+          <p>A small river named Dudan flows by their place and supplies.</p>
+          <h3>$2.90</h3>
+          <button type="button" class="btn btn-outline views">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="background-image: url('./img/img1.jpg'); background-size: cover"
+    >
+      <div
+        class="container"
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          padding-top: 20px;
+          text-align: center;
+        "
+      >
+        <h1>CUSTOMER SAYS</h1>
+        <p style="color: #686868">
+          Far far away,behind the word mountains,far from the countries Vokalia
+          and<br />Consonantia,there live the blind texts.
+        </p>
+      </div>
+      <div class="customer-cards">
+        <div class="customer">
+          <p>
+            "Even the all-powerful Pointing <br />has no control about the
+            blind<br />texts it is an almost<br />unorthographic life One day
+            however a small."
+          </p>
+          <div style="display: flex; gap: 15px">
+            <img src="./img/img14.jpg" alt="Avatar" class="avatar" />
+            <h5>Jon doe</h5>
+          </div>
+        </div>
+        <div class="customer">
+          <p>
+            "Even the all-powerful Pointing <br />has no control about the
+            blind<br />texts it is an almost<br />unorthographic life One day
+            however a small."
+          </p>
+          <div style="display: flex; gap: 15px">
+            <img src="./img/img14.jpg" alt="Avatar" class="avatar" />
+            <h5>Jon doe</h5>
+          </div>
+        </div>
+        <div class="customer">
+          <p>
+            "Even the all-powerful Pointing <br />has no control about the
+            blind<br />texts it is an almost<br />unorthographic life One day
+            however a small."
+          </p>
+          <div style="display: flex; gap: 15px">
+            <img src="./img/img14.jpg" alt="Avatar" class="avatar" />
+            <h5>Jon doe</h5>
+          </div>
+        </div>
+        <div class="customer">
+          <p>
+            "Even the all-powerful Pointing <br />has no control about the
+            blind<br />texts it is an almost<br />unorthographic life One day
+            however a small."
+          </p>
+          <div style="display: flex; gap: 15px">
+            <img src="./img/img14.jpg" alt="Avatar" class="avatar" />
+            <h5>Jon doe</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 0">
+      <div id="googleMap" style="width: 50%; height: 400px"></div>
+      <div class="mapped" style="width: 50%">
+        <h2>Book a Table</h2>
+
+        <div class="nam">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Second Name" />
+        </div>
+        <div class="nam">
+          <input type="text" placeholder="Date" />
+          <input type="text" placeholder="Time" />
+          <input type="text" placeholder="Phone" />
+        </div>
+        <div class="nam">
+          <input type="text" placeholder="Message" />
+          <button type="button" class="btn ord">Appointment</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container foot">
+        <div class="about-us">
+          <h5>ABOUT US</h5>
+          <p style="color: whitesmoke">
+            Far far away,behind the word<br />mountain,far from the countries
+            <br />Vokalia and Consonantia,there live <br />
+            texts.
+          </p>
+          <ul class="medi" style="display: flex; gap: 5px; list-style: none">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-twitter"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="about-us">
+          <h5>RECENT BLOGS</h5>
+          <div>
+            <div style="display: flex; gap: 5px">
+              <img src="./img/img11.jpg" alt="Avatar" class="avatar2" />
+              <div
+                style="display: flex; flex-direction: column; text-align: left"
+              >
+                <p style="color: whitesmoke; font-size: 12px">
+                  Even the all-powerfull Pointing has<br />no control about
+                </p>
+                <ul
+                  style="
+                    display: flex;
+                    gap: 5px;
+                    list-style: none;
+                    font-size: 12px;
+                  "
+                >
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-calendar"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                      /></svg
+                    >Sept 25,2018
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-person"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                      /></svg
+                    >Admin
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div style="display: flex; gap: 5px">
+              <img src="./img/img13.jpg" alt="Avatar" class="avatar2" />
+              <div style="display: flex; flex-direction: column">
+                <p style="color: whitesmoke; font-size: 12px">
+                  Even the all-powerfull Pointing has<br />no control about
+                </p>
+                <ul
+                  style="
+                    display: flex;
+                    gap: 5px;
+                    list-style: none;
+                    font-size: 12px;
+                  "
+                >
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-calendar"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                      /></svg
+                    >Sept 25,2018
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-person"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                      /></svg
+                    >Admin
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-us" style="align-items: left">
+          <h5>SERVICES</h5>
+          <ul
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              list-style: none;
+            "
+          >
+            <li>Cooked</li>
+            <li>Deliver</li>
+            <li>Quality Food</li>
+            <li>Mixed</li>
+          </ul>
+        </div>
+        <div class="about-us">
+          <h5>HAVE A QUESTION</h5>
+          <ul
+            class="ques"
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              list-style: none;
+            "
+          >
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-geo-alt-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              <p style="color: whitesmoke">
+                203 Fake St.Mountain View,<br />San Francisco,California,<br />USA
+              </p>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-telephone-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                />
+              </svg>
+              <p style="color: whitesmoke">+2 392 3929 210</p>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                />
+              </svg>
+              <p style="color: whitesmoke">info@yourdomain.com</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script>
+      function myMap() {
+        var mapProp = {
+          center: new google.maps.LatLng(51.508742, -0.12085),
+          zoom: 5,
+        };
+        var map = new google.maps.Map(
+          document.getElementById("googleMap"),
+          mapProp
+        );
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(51.508742, -0.12085),
+          map: map,
+          title: "Coffee days",
+        });
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgGE3lC88T3yFQHpHvRuDI9cWaujf2rNE&callback=myMap"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
